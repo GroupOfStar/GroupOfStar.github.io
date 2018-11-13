@@ -1,7 +1,9 @@
 # GroupOfStar.github.io
-***
- 项目说明、Demo演示入口
-***
+&nbsp;&nbsp;项目说明、Demo演示入口
+
+## 目录
+* [项目说明](#项目说明)
+* [项目Demo演示入口](#项目Demo演示入口)
 
 ## 项目说明
 
