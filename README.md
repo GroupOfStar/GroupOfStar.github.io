@@ -9,7 +9,7 @@
 ## 项目说明
 
 ### 项目1：Xenon
->[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon)用JavaScript、BootStrap加上其他工具库编写的前端框架模板.
+>[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon)  用JavaScript、BootStrap加上其他工具库编写的前端框架模板.
 
 1.文件地图
 ![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/seed/seed0.png)
