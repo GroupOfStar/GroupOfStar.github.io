@@ -64,6 +64,15 @@
 
 ### 项目3：VuexMS
 >[Xenon: Jquery+BootStrap](https://github.com/GroupOfStar/VuexMS)  基于vue全家桶，用webpack构建的node全栈后台管理系统
+```javascript
+/*已实现特点功能：
+**1.模块化开发，路由无刷新加载页面
+**2.ui了滚动条
+**3.添加了页面加载及进度条
+**4.表格分页，全数据搜索，自适应窗口大小变动，排序
+**5.基于node的express+mysqljs创建服务器，获取mysql数据库真实数据
+*/
+```
 
 #### Tech Stack
 * vue^2.5 , vue-router , vuex
@@ -76,7 +85,8 @@
 * 等等
 
 #### 项目截图部分
-> 可直接看演示效果。[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon/dashboard-1.html)
+1.用户列表页
+![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/vuexms/用户列表.png)
 
 ## 项目Demo演示入口
  
