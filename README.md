@@ -11,9 +11,13 @@
 >用JavaScript、BootStrap加上其他工具库编写的前端框架模板
 
 1.文件地图
-![image](https://github.com/jasonBai007/vue-seed/raw/master/screenshot/map.png)
-2.登录页
-![image](https://github.com/jasonBai007/vue-seed/raw/master/screenshot/login.jpg)
+![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/seed/seed0.png)
+2.项目说明
+![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/seed/seed1.png)
+3.统计图表
+![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/seed/seed2.png)
+4.国际化
+![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/seed/seed4.png)
 
 ## 项目Demo演示入口
  
