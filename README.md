@@ -90,9 +90,11 @@
 
 ## 项目Demo演示入口
  
-1.[VuexMS: Vue+Vuex+express](https://groupofstar.github.io/xenon/dashboard-1.html) 用JavaScript、BootStrap加上其他工具库编写的前端框架模板
-
+1.[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon/dashboard-1.html) 用JavaScript、BootStrap加上其他工具库编写的前端框架模板
+2.Vueseed（暂无）
+3.VuexMS（暂无）
 ```
+--注：
 --其他项目由于写了node的后台代码，需要服务器环境
 --所以无法演示，只能看上面截图
 --以后有时间将会转移到其他免费服务器上
