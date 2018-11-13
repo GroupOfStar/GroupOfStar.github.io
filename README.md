@@ -11,7 +11,7 @@
 ## 项目说明
 
 ### 项目1：Xenon
->[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon)  用JavaScript、BootStrap加上其他工具库编写的一个全面的前端框架模板.
+>[Xenon:Jquery+BootStrap](https://groupofstar.github.io/xenon)  用JavaScript、BootStrap加上其他工具库编写的一个全面的前端框架模板.
 
 #### Tech Stack
 * jQuery-ui , jquery-validate , jQuery
@@ -28,7 +28,7 @@
 > 可直接看演示效果。[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon/dashboard-1.html)
 
 ### 项目2：Vueseed
->[Vueseed: Vue+Elment](https://github.com/GroupOfStar/vueseed)  用webpack构建的扁平化设计风格的一个后台管理系统模板，含有国际化和各种特效.
+>[Vueseed:Vue+ElementUI](https://github.com/GroupOfStar/vueseed)  用webpack构建的扁平化设计风格的一个后台管理系统模板，含有国际化和各种特效.
 
 #### Tech Stack
 * Vue @ 2.5.9
@@ -63,7 +63,7 @@
 ![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/seed/seed3.png)
 
 ### 项目3：VuexMS
->[Xenon: Jquery+BootStrap](https://github.com/GroupOfStar/VuexMS)  基于vue全家桶，用webpack构建的node全栈后台管理系统
+>[VuexMS:Vue+ElementUI](https://github.com/GroupOfStar/VuexMS)  基于vue全家桶，用webpack构建的node全栈后台管理系统
 ```javascript
 /*已实现特点功能：
 **1.模块化开发，路由无刷新加载页面
@@ -90,9 +90,11 @@
 
 ## 项目Demo演示入口
  
-1.[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon/dashboard-1.html) 用JavaScript、BootStrap加上其他工具库编写的前端框架模板
-2.Vueseed（暂无）
-3.VuexMS（暂无）
+>1.[Xenon:Jquery+BootStrap](https://groupofstar.github.io/xenon/dashboard-1.html) 用JavaScript、BootStrap加上其他工具库编写的前端框架模板。
+><br/>
+>2.Vueseed:Vue+ElementUI（暂无）
+><br/>
+>3.VuexMS:Vue+ElementUI（暂无）
 ```
 --注：
 --其他项目由于写了node的后台代码，需要服务器环境
