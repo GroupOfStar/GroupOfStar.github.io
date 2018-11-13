@@ -24,7 +24,7 @@
 * 等等
 
 #### 项目截图部分
-
+> 可直接看演示效果。[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon/dashboard-1.html)
 
 ### 项目2：vueseed
 >[Xenon: Vue+Elment](https://github.com/GroupOfStar/vueseed)  扁平化设计风格的一个后台管理系统模板，含有国际化和各种特效.
