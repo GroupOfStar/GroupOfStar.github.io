@@ -4,8 +4,9 @@
 ## 目录
 * [项目说明](#项目说明)
     * [项目1：Xenon](#项目1Xenon)
-    * [项目2：Vueseed](#项目2vueseed)
-    * [项目3：VuexMS](#项目3VuexMS)
+    * [项目2：ReactSeed](#项目2ReactSeed)
+    * [项目3：Vueseed](#项目3vueseed)
+    * [项目4：VuexMS](#项目4VuexMS)
 * [项目Demo演示入口](#项目Demo演示入口)
 
 ## 项目说明
@@ -27,7 +28,30 @@
 #### 项目截图部分
 > 可直接看演示效果。[Xenon: Jquery+BootStrap](https://groupofstar.github.io/xenon/dashboard-1.html)
 
-### 项目2：Vueseed
+### 项目2：ReactSeed
+>[ReactSeed:React+AntDesign](https://github.com/GroupOfStar/ReactSeed)  基于Antd-Pro构建的后台管理系统的启动框架，内部封装了常用的utils、基类、以及组件。
+
+#### Tech Stack
+* "react": "^16.7.0",
+* "recompose": "^0.30.0"
+* "antd": "^3.15.0",
+* "ant-design-pro": "^2.2.1",
+* "umi": "^2.4.4",
+* "dva": "^2.4.1",
+* "braft-editor": "^2.2.5",
+* "moment": "^2.24.0",
+* "mockjs": "^1.0",
+* eCharts @ 3.7.2
+
+#### 项目部分截图
+
+1.菜单管理
+![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/ReactSeed/ReactSeed1.png)
+2.字典管理
+![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/ReactSeed/ReactSeed2.png)
+
+
+### 项目3：Vueseed
 >[Vueseed:Vue+ElementUI](https://github.com/GroupOfStar/vueseed)  用webpack构建的扁平化设计风格的一个后台管理系统模板，含有国际化和各种特效.
 
 #### Tech Stack
@@ -51,7 +75,7 @@
 * rythm.js 音频节奏可视化模块
 * vue-particles  粒子星空效果
 
-#### 项目截图部分
+#### 项目部分截图
 
 1.文件地图
 ![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/seed/seed0.png)
@@ -62,7 +86,7 @@
 4.国际化
 ![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/seed/seed3.png)
 
-### 项目3：VuexMS
+### 项目4：VuexMS
 >[VuexMS:Vue+ElementUI](https://github.com/GroupOfStar/VuexMS)  基于vue全家桶，用webpack构建的node全栈后台管理系统
 ```javascript
 /*已实现特点功能：
@@ -84,7 +108,7 @@
 * webpack^3.6
 * 等等
 
-#### 项目截图部分
+#### 项目部分截图
 1.用户列表页
 ![image](https://github.com/GroupOfStar/GroupOfStar.github.io/blob/master/screenshot/vuexms/用户列表.png)
 
@@ -92,9 +116,11 @@
  
 >1.[Xenon:Jquery+BootStrap](https://groupofstar.github.io/xenon/dashboard-1.html) 用JavaScript、BootStrap加上其他工具库编写的前端框架模板。
 ><br/>
->2.Vueseed:Vue+ElementUI（暂无）
+>2.ReactSeed:React+AntDesign（暂无）
 ><br/>
->3.VuexMS:Vue+ElementUI（暂无）
+>3.Vueseed:Vue+ElementUI（暂无）
+><br/>
+>4.VuexMS:Vue+ElementUI（暂无）
 ```
 --注：
 --其他项目由于写了node的后台代码，需要服务器环境
