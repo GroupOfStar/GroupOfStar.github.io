@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/GroupOfStar/GroupOfStar.github.io/issues"
   },
-  "homepage": "https://github.com/GroupOfStar/GroupOfStar.github.io#readme",
+  "homepage": "https://GroupOfStar.github.io",
   "devDependencies": {
     "vitepress": "^1.0.0-rc.15"
   }
