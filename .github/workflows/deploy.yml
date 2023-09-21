@@ -1,6 +1,9 @@
 name: 部署到GitHub
 
 on:
+  push:
+    branches: [main]
+
   # 这个选项可以使你手动在 Action tab 页面触发工作流
   workflow_dispatch:
 
@@ -13,7 +16,7 @@ permissions:
 # 允许一个并发的部署
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   # 单次部署的工作描述
@@ -40,7 +43,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
-          path: "./dist"
+          path: "dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
