@@ -1,5 +1,5 @@
 {
-  "name": "github-io",
+  "name": "groupofstar-github-io",
   "version": "1.0.0",
   "description": "github io",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GroupOfStar/github-io.git"
+    "url": "git+https://github.com/GroupOfStar/GroupOfStar.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GroupOfStar/github-io/issues"
+    "url": "https://github.com/GroupOfStar/GroupOfStar.github.io/issues"
   },
-  "homepage": "https://github.com/GroupOfStar/github-io#readme",
+  "homepage": "https://github.com/GroupOfStar/GroupOfStar.github.io#readme",
   "devDependencies": {
     "vitepress": "^1.0.0-rc.15"
   }
