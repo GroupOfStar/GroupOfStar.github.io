@@ -26,5 +26,5 @@ import Animation from './Animation.vue'
 
 > 对应关键代码
 
-<<< ./animation.vue#snippet
+<<< ./Animation.vue#snippet
 
