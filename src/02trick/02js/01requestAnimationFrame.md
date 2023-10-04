@@ -19,7 +19,7 @@ callback：下一次重绘之前更新动画帧所调用的函数(即上面所�
 ## 应用
 
 <script setup>
-import Animation from './animation.vue'
+import Animation from './Animation.vue'
 </script>
 
 <Animation />
