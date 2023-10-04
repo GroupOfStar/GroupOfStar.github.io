@@ -1,4 +1,10 @@
 import { defineConfig } from "vitepress";
+import {
+  extendSidebar,
+  codePointSidebar,
+  trickSidebar,
+  projectSidebar
+} from "./siderbar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,37 +20,46 @@ export default defineConfig({
     siteTitle: "Chqx Playground",
     logo: "/logo.svg",
     lastUpdatedText: "最后更新",
-    outline: { level: [2, 3], label: "本页目录" },
+    outline: { level: [2, 4], label: "本页目录" },
     docFooter: {
       prev: "下一页",
       next: "上一页"
     },
     nav: [
-      { text: "Home", link: "/" },
+      { text: "首页", link: "/" },
       {
-        text: "Examples",
-        link: "/examples/markdown",
-        activeMatch: "/examples/"
+        text: "基础知识",
+        activeMatch: "/01code-point/",
+        link: "/01code-point/01html/01document"
+      },
+      {
+        text: "前端技巧",
+        activeMatch: "/02trick/",
+        link: "/02trick/03css-js/01height-atuo"
+      },
+      { text: "前端扩展", activeMatch: "/03extend/", link: "/" },
+      {
+        text: "仓库",
+        activeMatch: "/04repositories/",
+        link: "/04repositories/01webpack/01thinking"
       }
+      // { text: "环境部署", link: "/", activeMatch: "/05deployment/" }
     ],
     footer: {
       message: "Released under the MIT License.",
       copyright: "Copyright © 2022-present Chqx Playground"
     },
-    sidebar: [
-      {
-        text: "Examples",
-        collapsed: true,
-        items: [
-          { text: "Markdown", link: "/examples/markdown" },
-          { text: "Runtime API", link: "/examples/runtime-api" }
-        ]
-      }
-    ],
-    socialLinks: [
-      { icon: "github", link: "https://github.com/GroupOfStar/github-io" }
-    ],
+    sidebar: {
+      "/01code-point/": { base: "/01code-point/", items: codePointSidebar() },
+      "/02trick/": { base: "/02trick/", items: trickSidebar() },
+      "/03extend/": { base: "/03extend/", items: extendSidebar() },
+      "/04repositories/": { base: "/04repositories/", items: projectSidebar() }
+    },
+    // socialLinks: [
+    //   { icon: "github", link: "https://github.com/GroupOfStar/github-io" }
+    // ],
     sidebarMenuLabel: "返回顶部",
     externalLinkIcon: true
-  }
+  },
+  markdown: { lineNumbers: true }
 });
