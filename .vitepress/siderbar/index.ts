@@ -111,7 +111,11 @@ export const projectSidebar = (): DefaultTheme.SidebarItem[] => {
     {
       text: "mini-vue",
       collapsed: false,
-      items: [{ text: "core", link: "03vue/core" }]
+      items: [
+        { text: "简介", link: "03vue/01introduction" },
+        { text: "@vue/reactivity", link: "03vue/02reactivity" },
+        { text: "@vue/runtime-core", link: "03vue/03runtime-core" }
+      ]
     }
   ];
 };
