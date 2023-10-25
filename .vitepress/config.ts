@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
 import {
-  extendSidebar,
   codePointSidebar,
   trickSidebar,
+  extendSidebar,
   projectSidebar
 } from "./siderbar";
 
@@ -37,7 +37,11 @@ export default defineConfig({
         activeMatch: "/02trick/",
         link: "/02trick/03css-js/01height-atuo"
       },
-      { text: "前端扩展", activeMatch: "/03extend/", link: "/" },
+      {
+        text: "前端扩展",
+        activeMatch: "/03extend/",
+        link: "/03extend/01typescript/01tsBasicGuide"
+      },
       {
         text: "仓库",
         activeMatch: "/04repositories/",

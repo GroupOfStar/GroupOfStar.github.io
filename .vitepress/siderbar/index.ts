@@ -76,32 +76,17 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
 export const extendSidebar = (): DefaultTheme.SidebarItem[] => {
   return [
     {
-      text: "HTML",
+      text: "TyepScript",
       collapsed: false,
       items: [
-        { text: "页面与结构", link: "01html/01document" },
-        { text: "文本与链接", link: "01html/02text-link" },
-        { text: "表单与多媒体", link: "01html/03form-media" }
+        { text: "基础指南", link: "01typescript/01tsBasicGuide" },
+        { text: "最佳实践之React", link: "01typescript/02practice-react" }
       ]
     },
     {
-      text: "CSS",
+      text: "工程搭建",
       collapsed: false,
-      items: [
-        { text: "阴影", link: "02css/01shadow" },
-        { text: "渐变", link: "02css/02gradients" },
-        { text: "过渡", link: "02css/03transforms" },
-        { text: "动画", link: "02css/04animations" }
-      ]
-    },
-    {
-      text: "JavaScript",
-      collapsed: false,
-      items: [
-        { text: "页面与结构", link: "01html/01document" },
-        { text: "文本与链接", link: "01html/02text-link" },
-        { text: "表单与多媒体", link: "01html/03form-media" }
-      ]
+      items: [{ text: "快速引导", link: "02builder/01fastboot.md" }]
     }
   ];
 };
