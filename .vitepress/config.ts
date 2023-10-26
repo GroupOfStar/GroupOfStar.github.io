@@ -35,7 +35,7 @@ export default defineConfig({
       {
         text: "前端技巧",
         activeMatch: "/02trick/",
-        link: "/02trick/03css-js/01height-atuo"
+        link: "/02trick/03css-js/01height-atuo/height-atuo"
       },
       {
         text: "前端扩展",

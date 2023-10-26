@@ -67,7 +67,13 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
     {
       text: "css & js",
       collapsed: false,
-      items: [{ text: "高度自动的过渡", link: "03css-js/01height-atuo" }]
+      items: [
+        { text: "高度自动的过渡", link: "03css-js/01height-atuo/height-atuo" },
+        {
+          text: "class降级处理",
+          link: "03css-js/02class-polyfill/class-polyfill"
+        }
+      ]
     }
   ];
 };
