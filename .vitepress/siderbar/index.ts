@@ -56,7 +56,11 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
           items: [
             {
               text: "requestAnimationFrame",
-              link: "02js/01requestAnimationFrame"
+              link: "02js/01requestAnimationFrame/requestAnimationFrame"
+            },
+            {
+              text: "requestAnimationFrame",
+              link: "02js/02requestIdleCallback/requestIdleCallback"
             }
           ]
         },
