@@ -59,13 +59,37 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
               link: "02js/01requestAnimationFrame/requestAnimationFrame"
             },
             {
-              text: "requestAnimationFrame",
+              text: "requestIdleCallback",
               link: "02js/02requestIdleCallback/requestIdleCallback"
             }
           ]
         },
-        { text: "文本与链接", link: "01html/02text-link" },
-        { text: "表单与多媒体", link: "01html/03form-media" }
+        {
+          text: "TypeScript",
+          collapsed: false,
+          items: [
+            {
+              text: "从字段到函数的推导",
+              link: "02js/11tsFieldFunction/tsFieldFunction"
+            },
+            {
+              text: "使用infer封装通用类型工具",
+              link: "02js/12tsInfer/tsInfer"
+            },
+            {
+              text: "通过拆分获取类型推断",
+              link: "02js/13splitorType/splitorType"
+            },
+            {
+              text: "递归类型推断",
+              link: "02js/14tsLoopType/tsLoopType"
+            },
+            {
+              text: "前置不确定参数",
+              link: "02js/15preUndefinedParams/preUndefinedParams"
+            }
+          ]
+        }
       ]
     },
     {

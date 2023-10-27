@@ -33,7 +33,7 @@ const onBtnClick = () => {
     // }
     // document.querySelector('.box')?.appendChild(fragment)
 
-    const consumer: Consumer<number> = (item, index) => {
+    const consumer: Consumer<string[] | number> = (item, index) => {
         const div = document.createElement('div')
         div.textContent = `${index}`
         document.querySelector('.box')?.appendChild(div)
@@ -52,7 +52,7 @@ const onBtnClick = () => {
     preformChunk(total.value, consumer, chunkSplitor)
 }
 
-type Consumer<T> = (item: T | undefined, index: number) => void
+type Consumer<T extends number | any[]> = (item: T extends (infer K)[] ? K : T, index: number) => void
 
 type ChunkSplitor = (callback: (nextTask: (timeout: number) => boolean) => void) => void
 
@@ -62,8 +62,8 @@ type ChunkSplitor = (callback: (nextTask: (timeout: number) => boolean) => void)
  * @param consumer 每段消费执行的回调
  * @param chunkSplitor 自定义分段执行器
  */
-function preformChunk<T>(datas: T | T[], consumer: Consumer<T>, chunkSplitor?: ChunkSplitor) {
-    const arr: (T | undefined)[] = Array.isArray(datas) ? datas : new Array(datas)
+function preformChunk<T extends number | any[]>(datas: T, consumer: Consumer<T>, chunkSplitor?: ChunkSplitor) {
+    const arr: (T extends (infer K)[] ? K : T)[] = Array.isArray(datas) ? datas : new Array(datas)
     if (arr.length === 0) {
         return;
     }
