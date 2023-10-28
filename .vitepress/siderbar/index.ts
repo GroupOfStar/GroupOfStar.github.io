@@ -89,6 +89,28 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
               link: "02js/15preUndefinedParams/preUndefinedParams"
             }
           ]
+        },
+        {
+          text: "Canvans",
+          collapsed: false,
+          items: [
+            {
+              text: "简介",
+              link: "02js/50canvasIntroduction/canvasIntroduction"
+            },
+            {
+              text: "基本绘制",
+              link: "02js/51canvasBaseDraw/canvasBaseDraw"
+            },
+            {
+              text: "文字绘制",
+              link: "02js/52canvasFontDraw/canvasFontDraw"
+            },
+            {
+              text: "图片绘制",
+              link: "02js/53canvasImgDraw/canvasImgDraw"
+            }
+          ]
         }
       ]
     },
