@@ -18,6 +18,7 @@ function initCanvasContext() {
     }
     return undefined
 }
+
 /** 获取min到max之间的随机整数 */
 function getRandom(min: number, max: number) {
     return Math.floor(Math.random() * (max + 1 - min) + min)

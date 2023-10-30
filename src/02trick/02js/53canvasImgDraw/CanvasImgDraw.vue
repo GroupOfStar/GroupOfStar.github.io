@@ -5,9 +5,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-
 const color = ref('#000000')
-
 const canvasRef = ref<HTMLCanvasElement>()
 
 function initCanvasContext() {

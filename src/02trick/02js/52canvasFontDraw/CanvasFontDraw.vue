@@ -4,7 +4,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-
 const canvasRef = ref<HTMLCanvasElement>()
 
 function initCanvasContext() {
@@ -22,6 +21,7 @@ function initCanvasContext() {
     }
     return undefined
 }
+
 /** 获取随机字符 */
 function getRandomChar() {
     const str = '0123456789abcdefghijklmnopqrstuvwxyz'

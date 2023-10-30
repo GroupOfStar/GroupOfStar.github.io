@@ -10,9 +10,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-
 const boxRef = ref<HTMLElement | null>(null)
-
 let animationId: number
 
 // 开始
@@ -57,7 +55,6 @@ const onReset = () => {
 
     .btn {
         box-sizing: border-box;
-
         background-color: #ffffff;
         color: rgba(0, 0, 0, 0.88);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);

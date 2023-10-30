@@ -8,9 +8,7 @@
 
 <script setup lang="ts">
 import { ref, h, createApp, VNode } from 'vue'
-
 const total = ref(100000)
-
 const boxRef = ref<HTMLElement | null>(null)
 
 // 插入100000个元素
