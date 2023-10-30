@@ -5,11 +5,11 @@
 ## 示例
 
 <script setup>
-import CanvasImgDraw from './canvasImgDraw.vue'
+import CanvasImgDraw from './CanvasImgDraw.vue'
 </script>
 
 <CanvasImgDraw />
 
 ## 代码
 
-<<< ./canvasImgDraw.vue
+<<< ./CanvasImgDraw.vue

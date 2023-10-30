@@ -5,11 +5,11 @@
 ## 示例
 
 <script setup>
-import CanvasFontDraw from './canvasFontDraw.vue'
+import CanvasFontDraw from './CanvasFontDraw.vue'
 </script>
 
 <CanvasFontDraw />
 
 ## 代码
 
-<<< ./canvasFontDraw.vue
+<<< ./CanvasFontDraw.vue

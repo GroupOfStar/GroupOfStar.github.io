@@ -29,7 +29,7 @@ requestIdleCallback(callback, options)
 ## 应用
 
 <script setup>
-import PreformChunk from './preformChunk.vue'
+import PreformChunk from './PreformChunk.vue'
 </script>
 
 <PreformChunk />
