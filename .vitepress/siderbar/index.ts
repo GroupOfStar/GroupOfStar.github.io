@@ -122,6 +122,10 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
         {
           text: "class降级处理",
           link: "03css-js/02class-polyfill/class-polyfill"
+        },
+        {
+          text: "SVG描边动画",
+          link: "03css-js/03svg-animation/svg-animation"
         }
       ]
     }
