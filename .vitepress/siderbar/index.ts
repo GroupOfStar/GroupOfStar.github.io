@@ -40,10 +40,10 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
       text: "CSS",
       collapsed: false,
       items: [
-        { text: "阴影", link: "02css/01shadow" },
-        { text: "渐变", link: "02css/02gradients" },
-        { text: "过渡", link: "02css/03transforms" },
-        { text: "动画", link: "02css/04animations" }
+        { text: "阴影", link: "01css/01shadow/shadow" },
+        { text: "渐变", link: "01css/02gradients/gradients" },
+        { text: "过渡", link: "01css/03transforms/transforms" },
+        { text: "动画", link: "01css/04animations/animations" }
       ]
     },
     {
@@ -111,6 +111,16 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
               link: "02js/53canvasImgDraw/canvasImgDraw"
             }
           ]
+        },
+        {
+          text: "SVG",
+          collapsed: false,
+          items: [
+            {
+              text: "SVG描边动画",
+              link: "02js/70svg-animation/svg-animation"
+            }
+          ]
         }
       ]
     },
@@ -124,8 +134,8 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
           link: "03css-js/02class-polyfill/class-polyfill"
         },
         {
-          text: "SVG描边动画",
-          link: "03css-js/03svg-animation/svg-animation"
+          text: "跟随系统的主题切换",
+          link: "03css-js/03theme-change/theme-change"
         }
       ]
     }
