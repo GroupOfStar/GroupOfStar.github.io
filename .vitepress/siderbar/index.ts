@@ -136,6 +136,10 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
         {
           text: "跟随系统的主题切换",
           link: "03css-js/03theme-change/theme-change"
+        },
+        {
+          text: "轮播图",
+          link: "03css-js/04img-swiper/swiper"
         }
       ]
     }
