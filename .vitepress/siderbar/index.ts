@@ -171,6 +171,24 @@ export const extendSidebar = (): DefaultTheme.SidebarItem[] => {
       text: "工程搭建",
       collapsed: false,
       items: [{ text: "快速引导", link: "02builder/01fastboot.md" }]
+    },
+    {
+      text: "各种手写",
+      collapsed: false,
+      items: [
+        { text: "Promise", link: "03handwriting/01promise/promise" },
+        { text: "对象拷贝", link: "03handwriting/02ObjectClone/ObjectClone" },
+        {
+          text: "防抖和节流",
+          link: "03handwriting/03debounce-throttle/debounce-throttle"
+        },
+        { text: "快速排序", link: "03handwriting/04quickSort/quickSort" },
+        {
+          text: "数组去重",
+          link: "03handwriting/05deleteDuplicateArr/deleteDuplicateArr"
+        },
+        { text: "金额千分位", link: "03handwriting/06convert/convert" }
+      ]
     }
   ];
 };
