@@ -121,6 +121,16 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
               link: "02js/70svg-animation/svg-animation"
             }
           ]
+        },
+        {
+          text: "Drag",
+          collapsed: false,
+          items: [
+            {
+              text: "课程表",
+              link: "02js/90drag-timetable/drag-timetable"
+            }
+          ]
         }
       ]
     },
