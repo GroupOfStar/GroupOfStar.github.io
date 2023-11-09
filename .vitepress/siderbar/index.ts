@@ -29,6 +29,11 @@ export const codePointSidebar = (): DefaultTheme.SidebarItem[] => {
         { text: "基础知识", link: "03js/01base" },
         { text: "函数", link: "03js/02function" }
       ]
+    },
+    {
+      text: "浏览器",
+      collapsed: false,
+      items: [{ text: "Cookie", link: "04browser/01cookie" }]
     }
   ];
 };
