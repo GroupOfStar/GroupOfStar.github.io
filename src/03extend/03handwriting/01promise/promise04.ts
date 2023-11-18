@@ -1,7 +1,12 @@
 namespace Promse {
-  // #region snippet
   type PromseState = "pendding" | "fulfilled" | "rejected";
 
+  // #region microTask
+  /**
+   * 运行一个微队列任务
+   * 把传递的函数放在微队列中
+   * @param {Function} callback
+   */
   function runMicroTask(callback: VoidFunction) {
     // 判断node环境
     if (process && process.nextTick) {
@@ -14,6 +19,7 @@ namespace Promse {
       setTimeout(callback, 0);
     }
   }
+  // #endregion microTask
 
   class MyPromise {
     /** 状态 */
@@ -68,5 +74,4 @@ namespace Promse {
     reject(3);
     throw new Error("123");
   });
-  // #endregion snippet
 }

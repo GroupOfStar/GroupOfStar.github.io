@@ -731,6 +731,80 @@ console.log("script end");
 > - sessionStorage: 数据在当前浏览器窗口关闭后自动删除；
 > - localStorage: 存储持久数据，浏览器关闭后数据不丢失除非主动删除数据。
 
+### 你用过的Web api有哪些？
+
+1. `window.getSelection()` 在网页上选中的文本；
+2. `element.requestFullscreen()` 某个元素进入全屏模式；
+3. `navigator.clipboard` 剪贴板API,复制和粘贴文本
+```js
+// Copy text to clipboard
+navigator.clipboard.writeText('Hello JavaScript!')
+  .then(() => {
+    console.log('Text copied to clipboard.');
+  })
+  .catch((error) => {
+    console.error('Failed to copy text: ', error);
+  });
+// 读取剪贴板中的文本
+const getText = await navigator.clipboard.readText();
+```
+4. `navigator.geolocation` 地理位置 API
+5. `navigator.vibrate` 震动 AP
+```js
+// Vibrate device for 1000 milliseconds
+navigator.vibrate(1000);
+```
+6. `navigator.connection` 网络监测
+```js
+navigator.connection.downlink;
+```
+7. `Web Speech` Web Speech API 可以让你将语音数据整合到网络应用中。Web Speech API 由两个部分组成： SpeechSynthesis （文本转语音）和 SpeechRecognition （异步语音识别）。
+```js
+// Speech Synthesis
+const synth = window.speechSynthesis;
+const utterance = new SpeechSynthesisUtterance("Hello World");
+synth.speak(utterance);
+
+// Speech Recognition
+const SpeechRecognition =
+  window.SpeechRecognition ?? window.webkitSpeechRecognition;
+
+const recognition = new SpeechRecognition();
+recognition.start();
+recognition.onresult = (event) => {
+  const speechToText = event.results[0][0].transcript;
+  console.log(speechToText);
+};
+```
+8. `ResizeObserver` Resize Observer API 允许我们轻松观察元素的大小并处理其变化。当你拥有一个可调整大小的侧边栏时，它非常有用。
+```js
+const sidebar = document.querySelector(".sidebar");
+const observer = new ResizeObserver((entries) => {
+  const sidebar = entries[0];
+  //Do something with the element's new dimensions
+});
+observer.observe(sidebar);
+```
+9. `Page Visibility` 页面可见性 API 允许我们检查页面对用户是否可见。当你想要暂停视频时，这非常有用。有两种方法来进行此检查：
+```js
+// Method 1
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") {
+    document.title = "Visible";
+    return;
+  }
+  document.title = "Not Visible";
+});
+
+// Method 2
+window.addEventListener("blur", () => {
+  document.title = "Not Visible";
+});
+window.addEventListener("focus", () => {
+  document.title = "Visible";
+});
+```
+
 ## 六、关于Vue
 
 ### Vue3和Vue2最大区别
@@ -1061,6 +1135,8 @@ CSP 被设计成完全向后兼容（除CSP2 在向后兼容有明确提及的�
 
 ### 工作经历
 
+本科，计算机专业，有7年前端开发经验。熟悉 React、Vue 等前端主流框架和库，有组件库和 npm 包的开发和发布经验；了解 express、koa、nestjs 等服务器的开发；注重代码规，善用 ts+eslint+prettier等，有一定的前端工程化经验；了解自动化开发流程，带领过3-5人的前端团队。对前端布局、UI 交互设计有独特的理解和追求，喜欢 TDD 开发方式，喜欢在 GitHub 上对 Web 前沿技术进行研究。
+
 数据平台
 
 提供从数据采集（数据集成平台）-数据构建（主数据）-数据管理（数据生命周期、数据地图、元数据）-数据应用（用户增长引擎、智能决策驾驶舱-数据可视化展示）全链路一站式的解决方案，覆盖用户整个营销运营周期（潜客营销、会员管理、售后运营），可以根据客户(车厂)所处的阶段和具体业务需求，制定定制化的解决方案。
@@ -1068,3 +1144,24 @@ CSP 被设计成完全向后兼容（除CSP2 在向后兼容有明确提及的�
 有7年左右的前端开发经验
 
 目前在一家做车载系统的公司担任高级前端开发，负责数据平台方向和二手车业务的前端技术选型、工程化和部分业务的开发工作。
+
+内容:
+1. 担当数据平台产品线下，知点、数据资产、用户增长引擎、智能决策驾驶舱产品的前端一号位；进行技术选型、开发方案的编写
+和核心业务的开发工作；
+2. 负责二手车产品线下，web和h5端打印版报告、h5端闲鱼 app 订单上传页、远程监测小程序、管理后台这5个项目的工程化搭
+建和核心业务代码的开发工作，并跟进项目的落地情况和各迭代版本的持续演进；
+3. 负责小程序平台产品线下，交付管理平台的开发工作；
+4. 搭建舒服高效的前端工程，接入自动化 DevOps 研发流程，接入代码门神质量卡点，确保其开发迭代效率及质量；
+5. 制定前端团队的开发流程规范，包括开发前的需求 story 创建、开发方案模板，开发后的 bug 处理规范、代码发布申请流程
+等；
+6. 对成员开发方案进行审核、代码 checked 合并，跟进代码门神质量情况，审核成员上线发布申请；
+7. 开发维护 Fusion 物料组件，解决 issue 问题，跟进组件在其他项目中的落地情况；
+8. 开发基于 DevOps 自动化流程上的 npm包，确保定制化项目能接入到 DEF中。
+
+业绩:
+1. 制定了前端团队的开发流程规范，保证团队能高效地完成各自的工作；
+2. 带领团队完成数据平台、二手车和小程序平台这三条业务线下前端项目的开发工作，确保在交付效率和交付质量上满足了预
+期；
+3. 负责的产品先项目接入到了标准化的O2 Space 研发流程中，在质量方面确保 block和 major 问题数都为0；
+4. 基于 Fusion 组件开发的交付管理平台，其代码没有页面级别自定义样式，所有页面均要是符合规范的优质页面；
+5. 沉淀了基于 DEF DevOps 的 oss 资源上传构建器的 npm包，并在二手车下的项目中进行了落地。

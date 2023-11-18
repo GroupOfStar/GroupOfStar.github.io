@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promise04</title>
+  </head>
+  <body>
+    <!-- #region snippet -->
+    <script>
+      const p = document.createElement("p");
+      setTimeout(function () {
+        console.log(1);
+      });
+      const observer = new MutationObserver(function () {
+        console.log("变化了");
+      });
+      observer.observe(p, {
+        childList: true // 观察该元素内部的变化
+      });
+      p.innerHTML = "1";
+      console.log(2);
+    </script>
+    <!-- #endregion snippet -->
+  </body>
+</html>

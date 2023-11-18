@@ -66,6 +66,18 @@ export const trickSidebar = (): DefaultTheme.SidebarItem[] => {
             {
               text: "requestIdleCallback",
               link: "02js/02requestIdleCallback/requestIdleCallback"
+            },
+            {
+              text: "IntersectionObserver",
+              link: "02js/03IntersectionObserver/IntersectionObserver"
+            },
+            {
+              text: "visibilitychange 事件",
+              link: "02js/04visibilitychange/visibilitychange"
+            },
+            {
+              text: "Animations API",
+              link: "02js/05Animation/Animation"
             }
           ]
         },

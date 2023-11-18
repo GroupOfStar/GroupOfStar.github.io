@@ -13,7 +13,20 @@
 
 ## 微队列函数的封装
 
-TODO
+看一下下面的js代码
+
+<<< ./promise03.html#snippet
+
+执行后的结果
+
+```consle
+2
+变化了
+1
+```
+现在我们就可以用它来模拟微队列
+
+<<< ./promise04.ts#microTask
 
 ## then函数的创建
 
