@@ -955,7 +955,7 @@ React Hooks有以下函数：
 - useReducer()
 - useCallback()
 - useMemo()
-- useRef()
+- useRef() 引用一个不需要渲染的值
 - useImperativeHandle()
 - useLayoutEffect()
 - useDebugValue()
@@ -994,8 +994,8 @@ function MyComponent() {
 ### React性能优化？
 
 1. 使用`React.lazy`和`Suspense`将页面设置为懒加载，避免 js 文件过大；
-2. 使用`SSR`同构直出技术，提高首屏的渲染速度；
-3. 使用`useCallback`和`useMemo` 缓存函数或变量；使用 React.memo 缓存组件；
+2. 使用`SSR`同构直出技术，提高首屏的渲染速度；[更多](https://blog.51cto.com/u_15283585/5016677)
+3. 使用`useCallback`和`useMemo` 缓存函数或变量，使用 React.memo 缓存组件；
 4. 尽量调整样式或`className`的变动，减少 jsx 元素上的变动，尽量使用与元素相关的字段作为 key，可以减少 diff 的时间（React 会尽量复用之前的节点，若jsx 元素发生变动，就需要重新创建节点）；
 5. 对于不需要产生页面变动的数据，可以放到`useRef()`中；
 
@@ -1096,6 +1096,17 @@ function MyComponent() {
 在对象扩展的情况下，使用接口继承要比交叉类型的性能更好。同时建议：
 - 使用interface来描述对象对外暴露的借口；
 - 使用type将一组类型重命名（或对类型进行复杂编程）。
+
+### TS使用第三方库，没有类型声明文件报错处理
+
+就近的types文件夹中，新建index.d.ts文件如下:
+
+```ts
+declare module 'jQuery'
+
+// 或者
+declare let jQuery: (selector: string) => any;
+```
 
 ### Git优缺点
 

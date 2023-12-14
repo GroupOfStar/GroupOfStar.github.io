@@ -204,7 +204,8 @@ export const extendSidebar = (): DefaultTheme.SidebarItem[] => {
           text: "数组去重",
           link: "03handwriting/05deleteDuplicateArr/deleteDuplicateArr"
         },
-        { text: "金额千分位", link: "03handwriting/06convert/convert" }
+        { text: "金额千分位", link: "03handwriting/06convert/convert" },
+        { text: "树的遍历", link: "03handwriting/07eachTree/eachTree" }
       ]
     }
   ];
