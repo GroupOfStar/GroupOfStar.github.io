@@ -10,7 +10,7 @@
 
 ### 回调函数写法
 
-TODO
+<<< ./scopeTree.ts#snippet2
 
 ## 深度优先
 
@@ -23,3 +23,7 @@ TODO
 ### 回调函数写法
 
 <<< ./deepTree.ts#snippet2
+
+## 类型定义
+
+<<< ./index.d.ts

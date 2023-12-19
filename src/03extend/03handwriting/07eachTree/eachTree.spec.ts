@@ -11,7 +11,7 @@ import {
   getScopeNodeList2
 } from "./scopeTree";
 
-const tree: ITreeNode = {
+const tree = {
   id: "1",
   children: [
     {
@@ -127,15 +127,20 @@ describe("广度优先", () => {
     ]);
   });
 
-  it.skip("遍历节点及子节点 by callback", () => {
+  it("遍历节点及子节点 by callback", () => {
     const ids: string[] = [];
+    const indexArr: number[] = [];
+    const parentIds: Array<string | undefined> = [];
     forScopeEachTree2(
-      node => {
+      (node, index, parent) => {
         ids.push(node.id);
+        indexArr.push(index);
+        parentIds.push(parent?.id);
       },
-      tree,
-      0
+      [tree]
     );
-    expect(ids).toEqual(["1", "2", "4", "3"]);
+    expect(ids).toEqual(["1", "2", "3", "4", "5", "6", "7"]);
+    expect(indexArr).toEqual([0, 0, 1, 2, 0, 1, 0]);
+    expect(parentIds).toEqual([undefined, "1", "1", "1", "2", "2", "5"]);
   });
 });

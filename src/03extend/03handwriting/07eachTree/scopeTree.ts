@@ -4,11 +4,11 @@
  * 获取节点及子节点 by while
  * @param node 当前节点
  */
-export function getScopeNodeList1(node: ITreeNode) {
-  const nodeList: ITreeNode[] = [];
-  const queue: ITreeNode[] = [node];
+export function getScopeNodeList1<T extends ITreeNode<T>>(node: T) {
+  const nodeList: T[] = [];
+  const queue: T[] = [node];
   while (queue.length) {
-    const item = queue.shift() as ITreeNode;
+    const item = queue.shift() as T;
     nodeList.push(item);
     for (let i = 0; i < item.children.length; i++) {
       queue.push(item.children[i]);
@@ -23,21 +23,22 @@ export function getScopeNodeList1(node: ITreeNode) {
  * @param callback 遍历时执行的回调
  * @param node 当前节点
  */
-export function forScopeEachTree1(callback: IForEachNode, node: ITreeNode) {
-  const nodeList: IWarpperNode[] = [];
-  const stack: IWarpperNode[] = [{ current: node, index: 0 }];
+export function forScopeEachTree1<T extends ITreeNode<T>>(
+  callback: IForEachNode<T>,
+  node: T
+) {
+  const nodeList: IWarpperNode<T>[] = [];
+  const stack: IWarpperNode<T>[] = [{ current: node, index: 0 }];
   while (stack.length) {
-    const item = stack.shift();
-    if (item) {
-      nodeList.push(item);
-      callback(item.current, item.index, item.parent);
-      for (let i = 0; i < item.current.children.length; i++) {
-        stack.push({
-          current: item.current.children[i],
-          index: i,
-          parent: item.current
-        });
-      }
+    const item = stack.shift()!;
+    nodeList.push(item);
+    callback(item.current, item.index, item.parent);
+    for (let i = 0; i < item.current.children.length; i++) {
+      stack.push({
+        current: item.current.children[i],
+        index: i,
+        parent: item.current
+      });
     }
   }
 }
@@ -46,15 +47,15 @@ export function forScopeEachTree1(callback: IForEachNode, node: ITreeNode) {
 // #region snippet2
 /**
  * 广度优先
- * 获取节点及子节点 by callback
+ * 获取节点及子节点 by callback TODO!!!
  * @param node 当前节点
  */
-export function getScopeNodeList2(node: ITreeNode): ITreeNode[] {
-  const nodeList: ITreeNode[] = [];
-  const queue: ITreeNode[] = [node];
+export function getScopeNodeList2<T extends ITreeNode<T>>(node: T): T[] {
+  const nodeList: T[] = [];
+  const queue: T[] = [node];
 
   while (queue.length) {
-    const item = queue.shift() as ITreeNode;
+    const item = queue.shift()!;
     nodeList.push(item);
     for (let i = 0; i < item.children.length; i++) {
       queue.push(item.children[i]);
@@ -67,21 +68,21 @@ export function getScopeNodeList2(node: ITreeNode): ITreeNode[] {
  * 广度优先
  * 遍历节点及子节点 by callback
  * @param callback 遍历时执行的回调
- * @param node 当前节点
- * @param index 当前节点索引
+ * @param nodeTree 当前节点的数组
  * @param parentNode 父节点
  */
-export function forScopeEachTree2(
-  callback: IForEachNode,
-  node: ITreeNode,
-  index: number,
-  parentNode?: ITreeNode
+export function forScopeEachTree2<T extends ITreeNode<T>>(
+  callback: IForEachNode<T>,
+  nodeTree: T[],
+  parentNode?: T
 ) {
-  callback(node, index, parentNode);
-  if (node.children) {
-    node.children.forEach((item, idx) => {
-      forScopeEachTree2(callback, item, idx, node);
-    });
-  }
+  const nodeList: T[] = [];
+  nodeTree.forEach((item, index) => {
+    callback(item, index, parentNode);
+    nodeList.push(item);
+  });
+  nodeList.forEach(item => {
+    forScopeEachTree2(callback, item.children, item);
+  });
 }
 // #endregion snippet2
